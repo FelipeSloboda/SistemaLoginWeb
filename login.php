@@ -3,7 +3,7 @@
 $usuario = $_POST["usuario"];
 $senha = $_POST["senha"];
 
-$select = "SELECT * FROM cadastros WHERE USER = '$usuario' and PASS = '$senha'";
+$select = "SELECT * FROM cadastros WHERE USUARIO = '$usuario' and SENHA = '$senha'";
 print($select);
 try {
     $pdo = new PDO("mysql:host=localhost; dbname=sistemaloginweb","root","");
