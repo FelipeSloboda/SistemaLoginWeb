@@ -12,7 +12,7 @@ try {
     $sql->execute();
     if($sql->rowCount() >= 1){
         setcookie("usuario",$usuario);
-        header('Location: index.php');
+        header('Location: principal.php');
     }
     else{
         header('Location: login.html');
