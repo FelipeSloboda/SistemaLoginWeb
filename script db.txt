@@ -1,0 +1,10 @@
+CREATE DATABASE SistemaLoginWeb;
+
+USE SistemaLoginWeb;
+
+CREATE TABLE cadastros (
+id int not null AUTO_INCREMENT,
+usuario varchar(22) not null,
+senha varchar(17) not null,
+PRIMARY KEY(ID)
+)
