@@ -1,18 +1,53 @@
 <html>
 <head>
     <title>CADASTRO</title>
+
+    <style>
+        .janela{
+            border: 1px solid #000000;
+            border-radius: 3%;
+            background-color:gainsboro;
+            margin: 15%;
+        }
+        .titulo{
+            margin-top: 35px;
+        }
+        .texto{
+            margin-top: 10px;
+        }
+        .caixa{
+            border: 1px solid black;
+            margin-top: -5px;
+        }
+        .botao{
+            margin-top: 10px;
+            
+        }
+    </style>
 </head>
 <body>
-    <h1>CADASTRO</h1>
-    <form method="post" action="cadastro.php">
-        <label for="usuario">USUARIO: </label>
-        <input name="usuario" id="usuario" type="text"></br>
-
-        <label for="senha">SENHA: </label>
-        <input name="senha" id="senha" type="password"></br>
-
-        <a href="login.html">LOGIN</a>
-        <button type="submit">CADASTRAR</button>
-    </form>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-8 col-xs-6 col-sm-6 col-md-4 col-lg-4 janela">
+            <form class="row" method="post" action="cadastro.php">
+                <div class="text-center titulo">
+                    <h3>CADASTRO</h3>
+                </div>
+                <div class="col-12">
+                    <label for="usuario" class="form-label texto">USUARIO</label>
+                    <input type="text" class="form-control caixa" id="nome">
+                </div>
+                <div class="col-12">
+                    <label for="senha" class="form-label texto">SENHA</label>
+                    <input type="password" class="form-control caixa" id="senha">
+                </div>
+                <div class="col-12 text-center">
+                    <a href="login.html" class="btn btn-primary botao">lOGIN</a>
+                    <button type="submit" class="btn btn-success botao">CADASTRAR</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
