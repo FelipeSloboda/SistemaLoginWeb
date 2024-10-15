@@ -15,6 +15,7 @@ try {
         header('Location: principal.php');
     }
     else{
+        echo
         "<script>
         alert('USUARIO OU SENHA INVALIDOS !');
         document.location.href = 'login.html';
