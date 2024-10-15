@@ -11,14 +11,23 @@ try {
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $sql = $pdo->prepare($select);
     $sql->execute();
-    echo("123");
+
     if($sql->rowCount() == 0){
         $sql = $pdo->prepare($insert);
         $sql->execute();
-        header('Location: login.html');
+        echo
+        "<script>
+        alert('CADASTRADO COM SUCESSO !');
+        document.location.href = 'login.html';
+        </script>
+        ";
     }
     else{
-        header('Location: cadastro.html');
+        "<script>
+        alert('CADASTRADO COM SUCESSO !');
+        document.location.href = 'cadastro.html';
+        </script>
+        ";
     }
 }
 catch (PDOException $e) {
