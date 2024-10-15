@@ -3,7 +3,7 @@
 $usuario = $_POST["usuario"];
 $senha = $_POST["senha"];
 
-$select = "SELECT * FROM cadastros WHERE usuario = '{$usuario}' and senha = '{$senha}'";
+$select = "SELECT * FROM cadastros WHERE usuario = '{$usuario}'";
 $insert = "INSERT INTO cadastros (usuario, senha) VALUES ('{$usuario}','{$senha}')";
 
 try {
@@ -23,8 +23,9 @@ try {
         ";
     }
     else{
+        echo
         "<script>
-        alert('CADASTRADO COM SUCESSO !');
+        alert('NOME DE USUARIO JA FOI UTILIZADO !');
         document.location.href = 'cadastro.html';
         </script>
         ";
