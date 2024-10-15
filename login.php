@@ -15,7 +15,11 @@ try {
         header('Location: principal.php');
     }
     else{
-        header('Location: login.html');
+        "<script>
+        alert('USUARIO OU SENHA INVALIDOS !');
+        document.location.href = 'login.html';
+        </script>
+        ";
     }
 }
 catch (PDOException $e) {
